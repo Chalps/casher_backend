@@ -2,8 +2,7 @@ package com.elit.casher_backend.model.enums;
 
 public enum UserType {
     ADMIN(0, "Administrador"),
-    COMUM(1, "Comum"),
-    RESPONSAVEL(2, "Responsável");
+    COMUM(1, "Comum");
 
     private int cod;
     private String description;

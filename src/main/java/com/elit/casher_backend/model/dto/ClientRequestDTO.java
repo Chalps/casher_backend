@@ -2,31 +2,31 @@ package com.elit.casher_backend.model.dto;
 
 import java.util.Date;
 
-public class UserRequestDTO {
-    private String fullname;
-    private String nickname;
+public class ClientRequestDTO {
+    private String name;
+    private String nickName;
     private String email;
     private String password;
     private String provider;
-    private Date birthdate;
+    private String birthDate;
     private Integer type;
     private String cpf;
     private String phoneNumber;
 
-    public String getFullname() {
-        return fullname;
+    public String getName() {
+        return name;
     }
 
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getNickname() {
-        return nickname;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public String getEmail() {
@@ -53,12 +53,12 @@ public class UserRequestDTO {
         this.provider = provider;
     }
 
-    public Date getBirthdate() {
-        return birthdate;
+    public String getBirthDate() {
+        return birthDate;
     }
 
-    public void setBirthdate(Date birthdate) {
-        this.birthdate = birthdate;
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
     }
 
     public Integer getType() {

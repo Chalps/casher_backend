@@ -1,15 +1,14 @@
 package com.elit.casher_backend.model.enums;
 
-public enum Status {
-    BLOQUEADO(0, "Bloqueado"),
-    DESBLOQUEADO(1, "Desbloqueado"),
-    CURSANDO(2, "Cursando"),
-    CONCLUIDO(3, "Concluido");
+public enum ClientType {
+    ADMIN(0, "Administrador"),
+    COMUM(1, "Comum"),
+    RESPONSAVEL(2, "Responsável");
 
     private int cod;
     private String description;
 
-    private Status(int cod, String description) {
+    private ClientType(int cod, String description) {
         this.cod = cod;
         this.description = description;
     }

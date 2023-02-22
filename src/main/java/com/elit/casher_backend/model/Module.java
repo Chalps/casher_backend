@@ -3,7 +3,7 @@ package com.elit.casher_backend.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "module", uniqueConstraints = {@UniqueConstraint(columnNames = {"ID"})})
+@Table(name = "module", uniqueConstraints = {@UniqueConstraint(columnNames = {"ID"})}, schema = "casher")
 public class Module {
     @Id
     @Column(name = "ID", nullable = false)

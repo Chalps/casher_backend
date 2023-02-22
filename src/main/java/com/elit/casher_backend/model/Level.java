@@ -5,8 +5,8 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-@Entity
-@Table(name = "level", uniqueConstraints = {@UniqueConstraint(columnNames = {"ID"})})
+@Entity(name = "Level")
+@Table(name = "level", uniqueConstraints = {@UniqueConstraint(columnNames = {"ID"})}, schema = "casher")
 public class Level implements Serializable {
     @Id
     @Column(name = "ID", nullable = false)
@@ -18,6 +18,9 @@ public class Level implements Serializable {
 
     @Column(name = "DESCRIPTION")
     private String description;
+
+    @Column(name = "POSITION")
+    private Integer position;
 
     @JoinColumn(name = "ID_TRAIL")
     @OneToMany(fetch = FetchType.LAZY)
@@ -45,6 +48,14 @@ public class Level implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Integer getPosition() {
+        return position;
+    }
+
+    public void setPosition(Integer position) {
+        this.position = position;
     }
 
     public List<Trail> getTrail() {

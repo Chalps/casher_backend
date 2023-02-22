@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "trail", uniqueConstraints = {@UniqueConstraint(columnNames = {"ID"})})
+@Table(name = "trail", uniqueConstraints = {@UniqueConstraint(columnNames = {"ID"})}, schema = "casher")
 public class Trail implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

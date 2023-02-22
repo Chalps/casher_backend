@@ -3,7 +3,7 @@ package com.elit.casher_backend.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "league", uniqueConstraints = {@UniqueConstraint(columnNames = {"ID"})})
+@Table(name = "league", uniqueConstraints = {@UniqueConstraint(columnNames = {"ID"})}, schema = "casher")
 public class League {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
